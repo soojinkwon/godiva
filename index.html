@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>고디바</title>
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <link rel="icon" href="images/godiva_favicon.png" />
+
+    <!-- css -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/main.css">
+
+
+    <!-- js -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="js/main.js"></script>
+</head>
+
+<body>
+    <div id="wrap">
+        <header id="header">
+            <div class="inner">
+                <h1><a href="#"><img src="images/godiva_logo.svg" alt="godiva_logo"></a></h1>
+
+                <nav>
+                    <ul class="gnb">
+                        <li><a href="#">메뉴</a>
+                            <ul class="depth2">
+                                <li><a href="#">전체상품</a></li>
+                                <li><a href="#">케이크</a></li>
+                                <li><a href="#">커피&음료</a></li>
+                                <li><a href="#">초콜릿</a></li>
+                                <li><a href="#">아이스크림</a></li>
+                                <li><a href="#">비스킷</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">온라인 단독</a>
+                            <ul class="depth2">
+                                <li><a href="#">전체 단독상품</a></li>
+                                <li><a href="#">단독세트</a></li>
+                                <li><a href="#">아이스크림 세트</a></li>
+                                <li><a href="#">디저트 세트</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">뉴스·이벤트</a>
+                            <ul class="depth2">
+                                <li><a href="#">프로모션</a></li>
+                                <li><a href="#">공지사항</a></li>
+                                <li><a href="#">미디어</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">고디바스토리</a>
+                            <ul class="depth2">
+                                <li><a href="#">역사</a></li>
+                                <li><a href="#">기원</a></li>
+                                <li><a href="#">초콜릿</a></li>
+                                <li><a href="#">쉐프</a></li>
+                                <li><a href="#">책임</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">배달·스토어</a>
+                            <ul class="depth2">
+                                <li><a href="#">매장찾기</a></li>
+                                <li><a href="#">매장</a></li>
+                                <li><a href="#">점포개설문의</a></li>
+                                <li><a href="#">배달주문</a></li>
+                                <li><a href="#">단체주문</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <!-- mgnb_wrap > mgnb > .mdepth2 > li > a -->
+
+                    <div class="ham"><img src="images/ham.svg" alt="ham"></div>
+                    <div class="mgnb_wrap">
+                        <ul class="mgnb">
+                            <li><a href="#">메뉴</a>
+                                <ul class="mdepth2">
+                                    <li><a href="#">전체상품</a></li>
+                                    <li><a href="#">케이크</a></li>
+                                    <li><a href="#">커피&음료</a></li>
+                                    <li><a href="#">초콜릿</a></li>
+                                    <li><a href="#">아이스크림</a></li>
+                                    <li><a href="#">비스킷</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">온라인 단독</a>
+                                <ul class="mdepth2">
+                                    <li><a href="#">전체 단독상품</a></li>
+                                    <li><a href="#">단독세트</a></li>
+                                    <li><a href="#">아이스크림 세트</a></li>
+                                    <li><a href="#">디저트 세트</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">뉴스·이벤트</a>
+                                <ul class="mdepth2">
+                                    <li><a href="#">프로모션</a></li>
+                                    <li><a href="#">공지사항</a></li>
+                                    <li><a href="#">미디어</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">고디바스토리</a>
+                                <ul class="mdepth2">
+                                    <li><a href="#">역사</a></li>
+                                    <li><a href="#">기원</a></li>
+                                    <li><a href="#">초콜릿</a></li>
+                                    <li><a href="#">쉐프</a></li>
+                                    <li><a href="#">책임</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">배달·스토어</a>
+                                <ul class="mdepth2">
+                                    <li><a href="#">매장찾기</a></li>
+                                    <li><a href="#">매장</a></li>
+                                    <li><a href="#">점포개설문의</a></li>
+                                    <li><a href="#">배달주문</a></li>
+                                    <li><a href="#">단체주문</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                        <div class="mgnb_close">모바일 메뉴 닫기</div>
+                    </div>
+
+                </nav>
+
+                <ul class="util">
+                    <li class="btn_search"><a href="#"><img src="images/ico_search.svg" alt="ico_search"></a></li>
+                    <li><a href="#"><img src="images/ico_bag.svg" alt="ico_bag"></a></li>
+                    <li class="util_more"><a href="#"><img src="images/ico_more.svg" alt="ico_more"></a>
+                        <ul class="member">
+                            <li><a href="#">로그인</a></li>
+                            <li><a href="#">주문배송조회</a></li>
+                            <li><a href="#">고객센터</a></li>
+                            <li><a href="#">매장찾기</a></li>
+                        </ul>
+                    </li>
+
+                </ul>
+            </div>
+
+            <div class="search">
+                <form>
+                    <fieldset>
+                        <legend>검색영역</legend>
+                        <div>
+                            <input type="search" placeholder="검색어를 입력해 주세요!">
+                            <input type="submit" value="검색">
+                        </div>
+                    </fieldset>
+                </form>
+                <button class="search_close">검색닫기</button>
+            </div>
+            <div class="dim"></div>
+        </header>
+
+        <main id="main">
+            <section id="mv">
+                <div class="swiper mv">
+                    <ul class="swiper-wrapper">
+                        <li class="swiper-slide"><img src="images/mv_1.jpg" alt="mv_1">
+                            <div class="mv_txt">
+                                <h3>고디바의 역사와 함께한 트뤼프 초콜릿 마스터 피스</h3>
+                                <h4>Legendaire Truffes Collection</h4>
+                                <p>‘오감을 깨우는 카카오’와 ‘부드러운 크림의 블렌딩’이 선사하는 맛의 풍요로움<br>
+                                    고디바의 가장 프리미엄한 트뤼프 초콜릿 컬렉션으로 기억에 오래남을 감사의 마음을 전해보세요.</p>
+                                <a href="#" class="btn_more">View More</a>
+                            </div>
+                        </li>
+                        <li class="swiper-slide"><img src="images/mv_2.jpg" alt="mv_1">
+                            <div class="mv_txt">
+                                <h3 class="mv2">샤를로트 가스토 x 고디바 콜라보레이션</h3>
+                                <h4 class="mv2">Historical Coupe d'amour</h4>
+                                <p class="mv2">
+                                    ‘쿠 드 아모르 컬렉션’은 정교한 모양의 초콜릿 속에 최고급 가나슈, 캐러멜을 넣고 <br>
+                                    프리미엄 벨기에 초콜릿으로 한 입 베어 물때마다 이제껏 경험하지 못한 환상적인 맛의 조화를 느끼게 해 준다.
+                                </p>
+                                <a href="#" class="btn_more" class="mv2">View More</a>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-pagination"></div>
+
+                </div>
+            </section>
+
+            <section id="collection">
+                <div class="inner">
+                    <h2>Collection</h2>
+
+                    <div class="swiper collection_list">
+                        <ul class="swiper-wrapper">
+                            <li class="swiper-slide">
+                                <h3>골드 콜렉션 | GOLD COLLECTION</h3>
+                                <p>벨기에의 전통이 살아숨쉬는 풍부한 맛의 프랄린과 부드러운 가나슈로 채워진 하나의 예술작품 같은 아름다운 초콜릿 <br>
+                                    리본을 풀고 상자는 여는 순간, 소중한 그 사람에게 행복을 전합니다.</p>
+                                <div class="c_list">
+                                    <div class="c_left border_r cc">
+                                        <img src="images/collection1_1.jpg" alt="collection1_1" class="c_1">
+                                    </div>
+                                    <div class="c_right">
+                                        <div class="c_2 border_r cc"><img src="images/collection1_2.jpg"
+                                                alt="collection1_2"></div>
+                                        <div class="c_3 border_r cc"><img src="images/collection1_3.jpg"
+                                                alt="collection1_3"></div>
+                                        <div class="c_4 border_r cc"><img src="images/collection1_4.jpg"
+                                                alt="collection1_4"></div>
+                                        <div class="c_5 border_r cc"><img src="images/collection1_5.jpg" alt="c_5">
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="swiper-slide">
+                                <h3>애프터눈 티 컬렉션 | Afternoon Tea Collection</h3>
+                                <p>친구, 가족 그리고 사랑하는 사람들과 고디바 애프터눈 티 컬렉션과 함께 보내는 소중한 시간 <br>
+                                    티 또는 커피와 함께 다양한 디저트를 즐기는 애프터눈 티 타임에서 영감을 받아 쉐프가 만든 시즌 한정 초콜릿 6종으로 가득 채웠습니다</p>
+                                <div class="c_list">
+                                    <div class="c_left border_r cc">
+                                        <img src="images/collection2_1.jpg" alt="collection2_1" class="c_1">
+                                    </div>
+                                    <div class="c_right">
+                                        <div class="c_2 border_r cc"><img src="images/collection2_2.jpg"
+                                                alt="collection1_2"></div>
+                                        <div class="c_3 border_r cc"><img src="images/collection2_3.jpg"
+                                                alt="collection1_3"></div>
+                                        <div class="c_4 border_r cc"><img src="images/collection2_4.jpg"
+                                                alt="collection1_4"></div>
+                                        <div class="c_5 border_r cc"><img src="images/collection2_5.jpg" alt="c_5">
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="swiper-pagination"></div>
+                    </div>
+
+                </div>
+            </section>
+
+            <section id="best" data-aos="fade-up">
+                <div class="inner">
+                    <h2>BEST ITEM</h2>
+                    <p>✨ 고디바의 베스트 아이템으로 당신의 미감을 감동시켜보세요! 🍫</p>
+                    <div class="new"><img src="images/best_new.svg" alt="best_new"></div>
+                    <ul>
+                        <li>
+                            <div class="best">
+                                <div class="best_img">
+                                    <img src="images/best1.jpg" alt="best1">
+                                </div>
+                                <dl>
+                                    <dt>프레스티지 비스킷 레이디 다크 12개입</dt>
+                                    <dd>Lady Godiva Noir Dark Chocolate 12pcs</dd>
+                                </dl>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="best">
+                                <div class="best_img">
+                                    <img src="images/best2.jpg" alt="best2">
+                                </div>
+                                <dl>
+                                    <dt>다크 초콜릿 브라우니</dt>
+                                    <dd>Dark Chocolate Brownie</dd>
+                                </dl>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="best">
+                                <div class="best_img">
+                                    <img src="images/best3.jpg" alt="best3">
+                                </div>
+                                <dl>
+                                    <dt>까레 어쏘트먼트 밀크&다크 24조각</dt>
+                                    <dd>Carre Assortment Collection 24pcs</dd>
+                                </dl>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="best">
+                                <div class="best_img">
+                                    <img src="images/best4.jpg" alt="best4">
+                                </div>
+                                <dl>
+                                    <dt>프레스티지 비스킷 레이디 다크 12개입</dt>
+                                    <dd>Lady Godiva Noir Dark Chocolate 12pcs</dd>
+                                </dl>
+                            </div>
+                        </li>
+                    </ul>
+
+                </div>
+            </section>
+
+
+
+            <section id="news">
+                <div class="inner">
+                    <h2>News & Event</h2>
+                    <p>🎉 새로운 맛을 만나보세요, 고디바의 최신 소식과 이벤트! 🍫</p>
+
+                    <div class="swiper news_list">
+                        <ul class="swiper-wrapper">
+                            <li class="swiper-slide">
+                                <a href="#">
+                                    <div class="news_inner">
+                                        <dl>
+                                            <dt>고디바 공식몰 회원전용 혜택</dt>
+                                            <dd>01 . 신규회원 최대 4천 포인트 지급 <br>
+                                                02 . 신규회원 15% 할인쿠폰</dd>
+                                        </dl>
+                                        <img src="images/news1.jpg" alt="news1">
+                                    </div>
+                                </a>
+
+                            </li>
+
+                            <li class="swiper-slide">
+                                <a href="#">
+                                    <div class="news_inner">
+                                        <dl>
+                                            <dt>[NEW] 고디바 X 모여봐요 동물의 숲 콜라보레이션 제품 출시 </dt>
+                                            <dd>한정 수량의 콜라보레이션 초콜릿을 4월 4일부터 고디바 공식 <br>
+                                                홈페이지와 7개의 고디바 매장에서 만나보세요!</dd>
+                                        </dl>
+                                        <img src="images/news2.jpg" alt="news2">
+                                    </div>
+                                </a>
+
+                            </li>
+
+                            <li class="swiper-slide">
+                                <a href="#">
+                                    <div class="news_inner">
+                                        <dl>
+                                            <dt>[NOTICE] 고디바 멤버십 회원 등급별 혜택 적용 안내</dt>
+                                            <dd>2024년 3월 1일부터 고디바 멤버십 회원의 등급별 혜택이 적용됩니다.<br>
+                                                고디바를 사랑해 주시는 회원님들께 감사드립니다.</dd>
+                                        </dl>
+                                        <img src="images/news3.jpg" alt="news3">
+                                    </div>
+                                </a>
+
+                            </li>
+
+                            <li class="swiper-slide">
+                                <a href="#">
+                                    <div class="news_inner">
+                                        <dl>
+                                            <dt>컵아이스크림 증정 프로모션</dt>
+                                            <dd>고디바 쇼콜라티에 쉐프가 만든 프리미엄 퀄리티 입 안 가득 퍼지는 진하고 깊은 맛<br>
+                                                온라인 “단독” 기획 세트 상품 추가 증정 혜택은, 고디바 공식몰에서만 진행됩니다.</dd>
+                                        </dl>
+                                        <img src="images/news4.jpg" alt="news4">
+                                    </div>
+                                </a>
+
+                            </li>
+                        </ul>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+
+
+
+                </div>
+
+                <div class="marquee n1" style="opacity: 1;">
+                    <div class="txt">
+                        <strong>GODIVA</strong> <span>GODIVA</span> <strong>GODIVA</strong> <span>GODIVA</span>
+                        <strong>GODIVA</strong> <span>GODIVA</span> <strong>GODIVA</strong> <span>GODIVA</span>
+                        <strong>GODIVA</strong> <span>GODIVA</span> <strong>GODIVA</strong> <span>GODIVA</span>
+                        <strong>GODIVA</strong> <span>GODIVA</span> <strong>GODIVA</strong> <span>GODIVA</span>
+                        <strong>GODIVA</strong> <span>GODIVA</span> <strong>GODIVA</strong> <span>GODIVA</span>
+                    </div>
+
+                </div>
+            </section>
+
+            <section id="stage">
+                <div class="inner">
+                    <p>고디바 프리미엄 디저트 카페&바</p>
+                    <h2>Stage by Godiva</h2>
+                    <a href="#" class="btn_more">View More</a>
+                </div>
+            </section>
+
+            <section id="insta">
+                <h2>Follow US</h2>
+                <p>🤎고디바 초콜릿 만나보기👇🏻</p>
+
+                <div class="swiper sns_list">
+                    <ul class="swiper-wrapper">
+                        <li class="swiper-slide"><a href="#"><img src="images/insta1.jpg" alt="insta1"></a></li>
+                        <li class="swiper-slide"><a href="#"><img src="images/insta2.jpg" alt="insta2"></a></li>
+                        <li class="swiper-slide"><a href="#"><img src="images/insta3.jpg" alt="insta3"></a></li>
+                        <li class="swiper-slide"><a href="#"><img src="images/insta4.jpg" alt="insta4"></a></li>
+                        <li class="swiper-slide"><a href="#"><img src="images/insta5.jpg" alt="insta5"></a></li>
+                        <li class="swiper-slide"><a href="#"><img src="images/insta6.jpg" alt="insta6"></a></li>
+                        <li class="swiper-slide"><a href="#"><img src="images/insta7.jpg" alt="insta7"></a></li>
+                        <li class="swiper-slide"><a href="#"><img src="images/insta8.jpg" alt="insta8"></a></li>
+                        <li class="swiper-slide"><a href="#"><img src="images/insta9.jpg" alt="insta9"></a></li>
+                        <li class="swiper-slide"><a href="#"><img src="images/insta10.jpg" alt="insta10"></a></li>
+                    </ul>
+
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+            </section>
+        </main>
+
+        <footer id="footer">
+            <div class="inner">
+                <div class="footer_logo">
+                    <img src="images/footer_logo.svg" alt="footer_logo">
+                    <div class="sns_icon">
+                        <div><a href="#"><img src="images/facebook_icon.svg" alt="facebook_icon"></a></div>
+                        <div><a href="#"><img src="images/insta_icon.svg" alt="insta_icon"></a></div>
+                        <div><a href="#"><img src="images/talk_icon.svg" alt="talk_icon"></a></div>
+                        <div><a href="#"><img src="images/youtube_icon.svg" alt="youtube_icon"></a></div>
+
+
+
+
+                    </div>
+                </div>
+                <div class="footer_txt">
+                    <ul class="footer_link">
+                        <li>
+                            <dl>
+                                <dt>사이트맵</dt>
+                                <dd>사이트맵</dd>
+                                <dd>개인정보 처리방침</dd>
+                                <dd>이용약관</dd>
+                                <dd>사업자 정보</dd>
+                                <dd>마케팅 제휴</dd>
+                                <dd>매장오픝</dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt>고객센터</dt>
+                                <dd>고객센터</dd>
+                                <dd>FQA</dd>
+                                <dd>1:1 문의</dd>
+                                <dd>주문</dd>
+                                <dd>배송</dd>
+                                <dd>대량구매</dd>
+                            </dl>
+                        </li>
+                        <li>
+
+
+                            <dl>
+                                <dt>오픈시간</dt>
+                                <dd>TEL. 080-759-7700</dd>
+                                <dd>평일 10:00 ~ 17:00</dd>
+                                <dd>점심시간 12:00 ~ 13:00</dd>
+                                <dd>토, 일, 공휴일 휴무</dd>
+                            </dl>
+
+
+                        </li>
+                    </ul>
+
+                    <address>(주)비에스케이코퍼레이션 ㅣ 대표이사 : 오미경, 나상도 ㅣ서울시 강남구 학동로 401 13층 <br> 전화번호 080-759-7700 (수신자 부담) ㅣ 팩스번호
+                        02-759-0788 ㅣ E-MAIL info@godiva.kr</address>
+                    <div class="copy">Copyright © 2023 GODIVA Company. All Rights Reserved.</div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <a href="#" class="gotop"></a>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>
